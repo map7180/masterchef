@@ -3,10 +3,9 @@
 <html>
 <head>
 <%@include file="Header.jsp"%>
-
-
 <title>Insert title here</title>
 </head>
+
 <body>
 <!-- Navbar Link -->
 <%@include file="navbar.jsp" %>
