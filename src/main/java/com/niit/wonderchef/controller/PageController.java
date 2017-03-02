@@ -38,7 +38,7 @@ public class PageController
 			mv.addObject("greenting", "welcome to spring wen mvc my first page");
 			return mv;
 		}			
-			@RequestMapping(value = { "/productlist" })
+		@RequestMapping(value = { "/productlist" })
 			public ModelAndView productlist() {
 				ModelAndView mv = new ModelAndView("productlist");
 				mv.addObject("greenting", "welcome to spring wen mvc my first page");

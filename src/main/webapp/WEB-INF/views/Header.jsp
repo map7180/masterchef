@@ -1,5 +1,6 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" isELIgnored="false" %>
 <%@taglib prefix="s" uri="http://www.springframework.org/tags" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <s:url value="/resources/Images" var="images"/>
 <s:url value="/resources/css" var="css"/>

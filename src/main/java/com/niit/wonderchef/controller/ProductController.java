@@ -14,6 +14,7 @@ import com.niit.wonderchef.dto.Category;
 @Controller
 @RequestMapping("/product")
 public class ProductController {
+	
 	@Autowired
 	private CategoryDAO categoryDAO;
 

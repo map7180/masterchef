@@ -6,6 +6,8 @@
 
 <link rel="stylesheet" type="text/css"
 	href="${css}/dataTables.bootstrap.css"></link>
+	
+	
 <script src="${js}/jquery.dataTables.js"></script>
 <script src="${js}/dataTables.bootstrap.js"></script>
 <script src="${js}/customfile.js"></script>

@@ -5,21 +5,18 @@
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-left">
 			
-			<c:forEach items="${catogeries}" var="category">
+			<%-- <c:forEach items="${catogeries}" var="category">
 			
 			<a href="#">${category.name}</a>
 			
-			</c:forEach>
+			</c:forEach> --%>
 			
-				<%-- <li><a href="${pageContext.request.contextPath}/hotset">Hot Sets</a></li>
+				<li><a href="${pageContext.request.contextPath}/hotset">Hot Sets</a></li>
 				<li><a href="${pageContext.request.contextPath}/productlist">Cook Ware</a></li>
 				<li><a href="${pageContext.request.contextPath}/register">Applications</a></li>
-				<li><a href="${pageContext.request.contextPath}/index">Bake
-						ware</a></li>
-				<li><a href="${pageContext.request.contextPath}/login">Kitchen
-						Tools</a></li>
-				<li><a href="${pageContext.request.contextPath}/register">Bottels
-						& Flakes</a></li> --%>
+				<li><a href="${pageContext.request.contextPath}/index">Bake ware</a></li>
+				<li><a href="${pageContext.request.contextPath}/login">Kitchen Tools</a></li>
+				<li><a href="${pageContext.request.contextPath}/register">Bottel & Flakes</a></li>
 
 
 				<!-- <ul class="nav navbar-nav pull-right">
