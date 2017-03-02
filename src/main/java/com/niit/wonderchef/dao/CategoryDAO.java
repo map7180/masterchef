@@ -1,8 +1,8 @@
-package dao;
+package com.niit.wonderchef.dao;
 
 import java.util.List;
 
-import dto.Category;
+import com.niit.wonderchef.dto.Category;
 
 public interface CategoryDAO {
 	

@@ -1,4 +1,4 @@
-package dto;
+package com.niit.wonderchef.dto;
 
 public class Category {
 

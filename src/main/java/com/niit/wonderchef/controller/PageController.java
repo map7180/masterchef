@@ -1,24 +1,21 @@
-package wonderchef;
+package com.niit.wonderchef.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import dao.CategoryDAO;
+import com.niit.wonderchef.dao.CategoryDAO;
 
 @Controller
-public class HelloController
+public class PageController
 {
-@Autowired
-private CategoryDAO categoryDAO;
-	
 	@RequestMapping(value = { "/", "/home", "/index" })
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("greenting", "welcome to spring wen mvc my first page");
 		
-		mv.addObject("categories",categoryDAO.list());
+		
 		return mv;
 	}
 
@@ -40,7 +37,12 @@ private CategoryDAO categoryDAO;
 			ModelAndView mv = new ModelAndView("hotset");
 			mv.addObject("greenting", "welcome to spring wen mvc my first page");
 			return mv;
-			
+		}			
+			@RequestMapping(value = { "/productlist" })
+			public ModelAndView productlist() {
+				ModelAndView mv = new ModelAndView("productlist");
+				mv.addObject("greenting", "welcome to spring wen mvc my first page");
+				return mv;
 	
 	}
 
