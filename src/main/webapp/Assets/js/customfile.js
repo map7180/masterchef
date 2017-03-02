@@ -12,16 +12,15 @@ $(function() {
 									data : 'id'
 								},
 								{
+									data : 'name'
+								},
+								{
 									data : 'description'
 								},
 								{
-									data : 'name'
-								},
-
-								{
 									data : null,
 									mRender : function(data, type, row) {
-										return '<img src="/wonderchef/resources/Images/'
+										return '<img src="/wonderchef/resources/Images/hs'
 												+ row.id
 												+ '.jpg" height="50" width="50">';
 									}
