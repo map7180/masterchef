@@ -1,17 +1,22 @@
 package com.niit.wonderchef.daoimpl;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.wonderchef.dao.CategoryDAO;
-import com.niit.wonderchef.dto.Category;
+import com.niit.wonderchef.model.Category;
 
 @Repository("categoryDAO")
+@Transactional
 public class CategoryDAOImpl implements CategoryDAO {
 
-	private static List<Category> categories = new ArrayList<Category>();
+	//private SessionFactory session;
+	
+/*	private static List<Category> categories = new ArrayList<Category>();
 	static {
 
 		Category category = new Category();
@@ -55,10 +60,13 @@ public class CategoryDAOImpl implements CategoryDAO {
 		categories.add(category);
 
 	}
+*/
+@Autowired
+private SessionFactory sessionFactory;
 
 	public List<Category> list() {
 		// TODO Auto-generated method stub
-		return categories;
+		return sessionFactory.getCurrentSession().createQuery("from Category",Category.class).list();
 	}
 
 }
